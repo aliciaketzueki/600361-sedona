@@ -5,8 +5,130 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
+		<header class="main-header">
+			<a class="main-logo" href="#">
+				<img src="img/index-logo.png" alt="Логотип">
+			</a>
+			<nav class="main-navigation">
+				<ul>
+					<li><a href="info.html">Информация</a></li>
+					<li><a href="photo_video.html">Фото и видео</a></li>
+					<li><a href="map.html">Карта штата</a></li>
+					<li><a href="hotels.html">Гостиницы</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main class="container">
+			<h1 class="main-head">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
+			<section class="causes">
+				<h2 class="causes-head">Рассмотрим причины, почему Седона лучше, чем Гранд Каньон!</h2>
+				<ul>
+					<li class="cause-1">
+						<div class="cause-1-description">
+							<p>НАСТОЯЩИЙ ГОРОДОК</p>
+							<br>
+							<p>— №1 —</p>
+							<br>
+							<p>СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+						</div>
+						<div class="cause-1-advices">
+							<ul>
+								<li class="cause-1-advice1">
+									<h3 class="cause-1-advice1-head">Жилье</h3>
+									<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+								</li>
+								<li class="cause-1-advice2">
+									<h3 class="cause-1-advice2-head">Еда</h3>
+									<p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь</p>
+								</li>
+								<li class="cause-1-advice3">
+									<h3 class="cause-1-advice3-head">Сувениры</h3>
+									<p>Не только китайского, но и местного производства!</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="cause-2">
+						<div class="cause-2-description">
+							<p>ТАМ ЕСТЬ Мост дьявола</p>
+							<br>
+							<p>— №2 —</p>
+							<br>
+							<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+						</div>
+					<li class="cause-3">
+						<div>
+							<h3>Небольшая площадь</h3>
+							<p>— №3 —</p>
+							<br>
+							<p>ВСЕ достопримеча-тельности находятся очень близко</p>
+						</div>
+					</li>
+					<li class="cause-4">
+						<div>
+							<h3>Красивая дорога</h3>
+							<p>— №4 —</p>
+							<br>
+							<p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<section class="search">
+				<h2 class="search-head">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+				<div class="search-options">
+					<h3 class="search-options-head">Поиск гостиницы в Седоне</h3>
+					<form class="search-options-form">
+						<label for="field-arrival">
+							Дата заезда:
+						</label>
+						<select id="field-arrival" name="arrival-date">
+							<option value="">
+								
+							</option>
+						</select>
+						<label for="field-departure">
+						Дата выезда:
+						</label>
+						<select id="field-departure" name="date-of-departure">
+							<option value="">
+								
+							</option>
+						</select>
+						<label>
+						Взрослые:
+						</label>
+						<label>
+						Дети:
+						</label>
+						<input type="submit" value="Найти">
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="main-footer">
+			<p>#VisitSedona</p>
+    	<section class="contacts">
+    		<ul class="">
+    			<li>
+    				<a href="twitter.com">
+    					<img src="#" alt="Twitter">
+    				</a>
+    			</li>
+    			<li>
+    				<a href="facebook.com">
+    					<img src="#" alt="Facebook">
+    				</a>
+    			</li>
+					<li>
+						<a href="youtube.com">
+							<img src="#" alt="Youtube">
+						</a>
+					</li>
+				</ul>
+			</section>
+			<p>Website by</p>
+		</footer>
   </body>
 </html>
