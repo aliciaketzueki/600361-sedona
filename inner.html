@@ -7,7 +7,7 @@
 	<body>
 		<header class="header">
 			<a class="header-logo" href="index.html">
-				<img src="img/Logo.png" alt="Логотип">
+				<img src="img/logo.png" alt="Логотип" width="138" height="70">
 			</a>
 			<nav class="header-navigation">
 				<ul>
@@ -20,13 +20,45 @@
 		</header>
 		<main>
 			<!--ФОРМА ПОИСКА ГОСТИНИЦ-->
+			<form action="" method="" oninput="costoutputmax.value=costmax.value">
+				<fieldset class="searching-form">
+					<legend class="searching-form-head">Инфраструктура:</legend>
+					<input type="checkbox" id="pool" name="pool" checked>
+					<label for="pool">Бассейн</label>
+					<input type="checkbox" id="parking" name="parking">
+					<label for="parking">Парковка</label>
+					<input type="checkbox" id="wi-fi" name="wi-fi">
+					<label for="wi-fi">Wi-fi</label>
+				</fieldset>
+				<fieldset class="searching-form">
+					<legend class="searching-form-head">Тип жилья:</legend>
+					<input type="checkbox" id="hotel" name="hotel" checked>
+					<label for="hotel">Гостиница</label>
+					<input type="checkbox" id="motel" name="motel" checked>
+					<label for="motel">Мотель</label>
+					<input type="checkbox" id="apartments" name="apartments" checked>
+					<label for="apartmetns">Апартаменты</label>
+				</fieldset>
+				<div class="searching-form">
+					<h1 class="searching-form-head">Стоимость в сутки (Р):</h1>
+				<!--От 0 до 3000 это поле вывода, можно сделать как таблицу (?)-->
+					<label for="costmax"></label>
+					От до <output name="costoutputmax"></output>
+					<input type="range" name="costmax" id="costmax" min="0" max="5000" multiple value="0,3000">
+					<!--Не работает multiple-->
+				</div>
+				<div class="searching-form-button">
+					<button type="submit">Показать</button>
+				</div>
+			</form>
+
 			<section class="hotels">
 				<h1 class="visually-hidden">Список отелей</h1>
 				<ul>
 					<li>
 						<section class="hotel-list">
-							<h2 class="Hotel-name">Amara Resort & Spa</h2>
-							<img src="img/Hotels-Amara.jpg" alt="Amara Resort & Spa">
+							<h2 class="hotel-name">Amara Resort &amp; Spa</h2>
+							<img src="img/hotels-amara.jpg" alt="Amara Resort &amp; Spa" width="135" height="90">
 							<p class="hotel-type">Гостиница</p>
 							<p class="hotel-price">ОТ 4000 Р.</p>
 							<p class="hotel-rating">Рейтинг: 8,5</p>
@@ -36,8 +68,8 @@
 					</li>
 					<li>
 						<section class="hotel-list">
-							<h2 class="Hotel-name">Desert Quail Inn</h2>
-							<img src="img/Hotels-Desert.jpg" alt="Desert Quail Inn">
+							<h2 class="hotel-name">Desert Quail Inn</h2>
+							<img src="img/hotels-desert.jpg" alt="Desert Quail Inn" width="135" height="90">
 							<p class="hotel-type">Мотель</p>	
 							<p class="hotel-price">ОТ 3000 Р.</p>
 							<p class="hotel-rating">Рейтинг: 8,9</p>
@@ -47,8 +79,8 @@
 					</li>
 					<li>
 						<section class="hotel-list">
-							<h2 class="Hotel-name">Villas at Poco Diablo</h2>
-							<img src="img/Hotels-Villas.jpg" alt="Villas at Poco Diablo">
+							<h2 class="hotel-name">Villas at Poco Diablo</h2>
+							<img src="img/hotels-villas.jpg" alt="Villas at Poco Diablo" width="135" height="90">
 							<p class="hotel-type">Апартаменты</p>
 							<p class="hotel-price">ОТ 2000 Р.</p>
 							<p class="hotel-rating">Рейтинг: 9,2</p>
@@ -59,30 +91,31 @@
 				</ul>
 			</section>
 		</main>
+
 		<footer class="footer">
 			<p>#VisitSedona</p>
     	<section class="footer-contacts">
     		<ul>
     			<li>
-    				<a href="twitter.com" class="footer-social-button">
-    					<img src="img/Twitter-Icon.svg" alt="Логотип Twitter">
+    				<a href="https://twitter.com" class="footer-social-button">
+    					<img src="img/twitter-icon.svg" alt="Логотип Twitter" width="17" height="15">
     				</a>
     			</li>
     			<li>
-    				<a href="facebook.com" class="footer-social-button">
-    					<img src="img/Facebook-Icon.svg" alt="Логотип Facebook">
+    				<a href="https://facebook.com" class="footer-social-button">
+    					<img src="img/facebook-icon.svg" alt="Логотип Facebook" width="12" height="22">
     				</a>
     			</li>
 					<li>
-						<a href="youtube.com" class="footer-social-button">
-							<img src="img/Youtube-Icon.svg" alt="Логотип Youtube">
+						<a href="https://youtube.com" class="footer-social-button">
+							<img src="img/youtube-icon.svg" alt="Логотип Youtube" width="20" height="16">
 						</a>
 					</li>
 				</ul>
 			</section>
 			<p class="footer-copyright">Website by</p>
 			<a href="https://htmlacademy.ru" class="footer-copyright-logo">
-				<img src="img/Logo-HTMLAcademy.svg" alt="Логотип HTML Academy">
+				<img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="115" height="41">
 			</a>
 		</footer>
 	</body>

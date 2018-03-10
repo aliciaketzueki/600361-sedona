@@ -7,7 +7,7 @@
   <body>
 		<header class="header">
 			<a class="header-logo" href="index.html">
-				<img src="img/Logo.png" alt="Логотип">
+				<img src="img/logo.png" alt="Логотип" width="138" height="70">
 			</a>
 			<nav class="header-navigation">
 				<ul>
@@ -18,7 +18,7 @@
 				</ul>
 			</nav>
 		</header>
-		<!--БОЛЬШОЕ ФОТО СЕДОНЫ-->
+		
 		<main class="main">
 			<div class="main-slogan">
 				<p class="main-head">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</p>
@@ -98,8 +98,32 @@
 				<p>Укажите предполагаемые даты поездки,
 				<br>
 				и мы покажем вам лучшие предложения гостиниц в седоне</p>
+			</section>
 					<!--ФОРМА ПОИСКА ГОСТИНИЦЫ-->
-				<img src="img/Index-map.jpg" alt="Карта">
+			<section>
+				<h2 class="search-hotels">Поиск гостиницы в Седоне</h2>
+				<form action="" method="">
+					<div class="date">
+						<label for="arrive">Дата заезда:</label>	
+						<input type="date" name="arrive" id="arrive">
+					</div>
+					<div class="date">
+						<label for="departure">Дата выезда:</label>
+						<input type="date" name="departure" id="departure">
+					</div>
+					<div class="number-of-persons">
+						<label for="adults">Взрослые</label>
+						<input type="number" id="adults">
+					</div>
+					<div class="number-of-persons">
+						<label for="children">Дети</label>
+						<input type="number" id="children">
+					</div>
+					<div class="order-button">
+						<button type="submit">Найти</button>
+					</div>
+				</form>
+				<img src="img/index-map.jpg" alt="Карта" width="768" height="593">
 			</section>
 		</main>
 
@@ -108,25 +132,25 @@
     	<section class="footer-contacts">
     		<ul>
     			<li>
-    				<a href="twitter.com" class="footer-social-button">
-    					<img src="img/Twitter-Icon.svg" alt="Логотип Twitter">
+    				<a href="https://twitter.com" class="footer-social-button">
+    					<img src="img/twitter-icon.svg" alt="Логотип Twitter" width="17" height="15">
     				</a>
     			</li>
     			<li>
-    				<a href="facebook.com" class="footer-social-button">
-    					<img src="img/Facebook-Icon.svg" alt="Логотип Facebook">
+    				<a href="https://facebook.com" class="footer-social-button">
+    					<img src="img/facebook-icon.svg" alt="Логотип Facebook" width="12" height="22">
     				</a>
     			</li>
 					<li>
-						<a href="youtube.com" class="footer-social-button">
-							<img src="img/Youtube-Icon.svg" alt="Логотип Youtube">
+						<a href="https://youtube.com" class="footer-social-button">
+							<img src="img/youtube-icon.svg" alt="Логотип Youtube" width="20" height="16">
 						</a>
 					</li>
 				</ul>
 			</section>
 			<p class="footer-copyright">Website by</p>
 			<a href="https://htmlacademy.ru" class="footer-copyright-logo">
-				<img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy">
+				<img src="img/logo-htmlacademy.svg" alt="Логотип HTML Academy" width="115" height="41">
 			</a>
 		</footer>
   </body>
