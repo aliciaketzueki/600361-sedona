@@ -22,7 +22,7 @@
 		
 		<main class="main">
 			<header class="main-slogan">
-				<h1 class="main-slogan-head">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
+				<h1 class="main-slogan-head">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
 				<p class="main-slogan-neck">Рассмотрим причины, почему Седона круче, чем Гранд Каньон!</p>
 			</header>
 			<section class="main-causes">
@@ -103,12 +103,13 @@
 				и мы покажем вам лучшие предложения гостиниц в седоне</p>
 			</section>
 					<!--ФОРМА ПОИСКА ГОСТИНИЦЫ-->
+			<button type="button" class="main-form-search">Поиск гостиницы в Седоне</button>
 			<form action="https://echo.htmlacademy.ru/" method="post" class="main-form">
 				<fieldset>
-				<legend class="main-form-head"><a href="#searchhotelsform">Поиск гостиницы в Седоне</a></legend>
+					<legend class="visually-hidden">Поиск гостиницы</legend>
 					<ul>
 						<li>
-							<label for="arrival"><a id="searchhotelsform">Дата заезда:</a></label>	
+							<label for="arrival">Дата заезда:</label>	
 							<input type="date" name="date-of-arrival" id="arrival" class="main-form-calendar" value="2017-04-24" required>
 						</li>
 						<li>
@@ -123,13 +124,13 @@
 								</svg>
 							</button>
 							<input type="text" id="adults" name="number-of-adults" class="main-form-number" value="2" pattern="^[ 0-9]+$">
-							<label for="adults-minus"></label>
 							<button type="button" class="main-form-plus" id="adults-plus">
 								<svg width="13" height="13">
 									<line stroke="#a9a9a9" stroke-width="3" x1="1" y1="6.5" x2="12" y2="6.5"/>
 									<line stroke="#a9a9a9" stroke-width="3" x1="6.5" y1="1" x2="6.5" y2="12"/>	
 								</svg>
 							</button>
+							<label for="adults-minus"></label>
 							<label for="adults-plus"></label>
 						</li>
 						<li>
@@ -140,13 +141,13 @@
 								</svg>
 							</button>
 							<input type="text" id="children" name="number-of-children" class="main-form-number" value="0" pattern="^[ 0-9]+$">
-							<label for="children-minus"></label>
 							<button type="button" class="main-form-plus" id="children-plus">
 								<svg width="13" height="13">
 									<line stroke="#a9a9a9" stroke-width="3" x1="1" y1="6.5" x2="12" y2="6.5"/>
 									<line stroke="#a9a9a9" stroke-width="3" x1="6.5" y1="1" x2="6.5" y2="12"/>	
 								</svg>
 							</button>
+							<label for="children-minus"></label>
 							<label for="children-plus"></label>
 						</li>
 					</ul>

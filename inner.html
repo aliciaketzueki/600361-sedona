@@ -21,7 +21,7 @@
 		</header>
 		<main>
 			<!--ФОРМА ПОИСКА ГОСТИНИЦ-->
-			<form action="https://echo.htmlacademy.ru/" method="post" oninput="costoutputmax.value=costmax.value">
+			<form action="https://echo.htmlacademy.ru/" method="post">
 				<fieldset class="main-searching-form1">
 					<legend class="main-searching-form-head">Инфраструктура:</legend>
 					<ul>
@@ -58,9 +58,14 @@
 				</fieldset>
 				<fieldset class="main-searching-form3">
 					<legend class="main-searching-form-head">Стоимость в сутки (Р):</legend>
-					<label for="costmax"></label>
-					От <output name="costoutputmin"></output> до <output name="costoutputmax"></output>
-					<input type="range" name="costmax" id="costmax" min="0" max="4000">
+					<div class="main-searching-form-filter">
+						<label class="main-searching-form-filter1">От <input type="number" value="0"></input></label> 
+						<label class="main-searching-form-filter2">До <input type="number" value="3000"></input></label>
+					</div>
+					<div class="main-searching-form-range">
+						<button class="main-searching-form-range-min" type="button">Min</button>
+						<button class="main-searching-form-range-max" type="button">Max</button>
+					</div>
 				</fieldset>
 				<button type="submit" class="main-searching-form-button">Показать</button>
 			</form>
@@ -73,16 +78,8 @@
 					<li><button class="sorting">по типу</button></li>
 					<li><button class="sorting">по рейтингу</button></li>
 				</ul>
-				<span class="icon-up-dir">
-					<button class="sorting">
-						<img src="img/icon-up-dir.svg" alt="Сортировать по возрастанию">
-					</button>
-				</span>
-				<span class="icon-down-dir">
-					<button class="sorting active">
-						<img src="img/icon-down-dir.svg" alt="Сортировать по убыванию">
-					</button>
-				</span>
+					<button class="sorting"></button>
+					<button class="sorting active"></button>
 			</div>
 
 			<section class="hotels">
