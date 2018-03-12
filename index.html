@@ -21,11 +21,10 @@
 		</header>
 		
 		<main class="main">
-			<div class="main-slogan">
-				<p class="main-slogan-head">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</p>
-				<br>
+			<header class="main-slogan">
+				<h1 class="main-slogan-head">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
 				<p class="main-slogan-neck">Рассмотрим причины, почему Седона круче, чем Гранд Каньон!</p>
-			</div>
+			</header>
 			<section class="main-causes">
 				<h1 class="visually-hidden">Причины</h1>
 				<ul>
@@ -35,6 +34,7 @@
 							<p>— №1 —
 							<br>
 							Седона — не аттракцион для туристов, там течет своя жизнь</p>
+							<img src="img/index-cause1.jpg" alt="Настоящий городок" width="512" height="256">
 						</section>
 					</li>
 					<li>
@@ -43,6 +43,7 @@
 							<p>— №2 —
 							<br>
 							Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+							<img src="img/index-cause2.jpg" alt="Мост Дьявола" width="512" height="256">
 						</section>
 					<li>
 						<section class="main-causes-description3">
@@ -104,15 +105,15 @@
 					<!--ФОРМА ПОИСКА ГОСТИНИЦЫ-->
 			<form action="https://echo.htmlacademy.ru/" method="post" class="main-form">
 				<fieldset>
-				<legend class="main-form-head">Поиск гостиницы в Седоне</legend>
+				<legend class="main-form-head"><a href="#searchhotelsform">Поиск гостиницы в Седоне</a></legend>
 					<ul>
 						<li>
-							<label for="arrival">Дата заезда:</label>	
-							<input type="date" name="date-of-arrival" id="arrival" class="main-form-calendar" value="2017-04-24">
+							<label for="arrival"><a id="searchhotelsform">Дата заезда:</a></label>	
+							<input type="date" name="date-of-arrival" id="arrival" class="main-form-calendar" value="2017-04-24" required>
 						</li>
 						<li>
 							<label for="departure">Дата выезда:</label>
-							<input type="date" name="date-of-departure" id="departure" class="main-form-calendar" value="2017-07-04">
+							<input type="date" name="date-of-departure" id="departure" class="main-form-calendar" value="2017-07-04" required>
 						</li>
 						<li>
 							<label for="adults">Взрослые</label>
@@ -121,7 +122,7 @@
 									<line stroke="#a9a9a9" stroke-width="3" x1="3" y1="2" x2="13" y2="2"/>
 								</svg>
 							</button>
-							<input type="text" id="adults" name="number-of-adults" class="main-form-number" min="0" value="2" pattern="^[ 0-9]+$">
+							<input type="text" id="adults" name="number-of-adults" class="main-form-number" value="2" pattern="^[ 0-9]+$">
 							<label for="adults-minus"></label>
 							<button type="button" class="main-form-plus" id="adults-plus">
 								<svg width="13" height="13">
@@ -138,7 +139,7 @@
 									<line stroke="#a9a9a9" stroke-width="3" x1="3" y1="2" x2="13" y2="2"/>
 								</svg>
 							</button>
-							<input type="text" id="children" name="number-of-children" class="main-form-number" min="0" value="0" pattern="^[ 0-9]+$">
+							<input type="text" id="children" name="number-of-children" class="main-form-number" value="0" pattern="^[ 0-9]+$">
 							<label for="children-minus"></label>
 							<button type="button" class="main-form-plus" id="children-plus">
 								<svg width="13" height="13">
@@ -147,7 +148,6 @@
 								</svg>
 							</button>
 							<label for="children-plus"></label>
-						</li>
 						</li>
 					</ul>
 					<button type="submit" class="main-form-button">Найти</button>
@@ -159,6 +159,7 @@
 		<footer class="footer">
 			<p class="footer-hashtag">#VisitSedona</p>
     	<section class="footer-contacts">
+    		<h1 class="visually-hidden">Контакты</h1>
     		<ul>
     			<li>
     				<a href="https://twitter.com" class="footer-social-button">

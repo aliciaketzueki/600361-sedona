@@ -52,7 +52,7 @@
 						</li>
 						<li>
 							<input type="checkbox" id="apartments" name="apartments" checked>
-							<label for="apartmetns">Апартаменты</label>
+							<label for="apartments">Апартаменты</label>
 						</li>
 					</ul>
 				</fieldset>
@@ -67,7 +67,22 @@
 			
 			<div>
 				<p>Найдено: 3</p>
-				<p>Сортировка: по цене по типу по рейтингу</p>
+				<ul>
+					<li>Сортировка:</li>
+					<li><button class="sorting active">по цене</button></li>
+					<li><button class="sorting">по типу</button></li>
+					<li><button class="sorting">по рейтингу</button></li>
+				</ul>
+				<span class="icon-up-dir">
+					<button class="sorting">
+						<img src="img/icon-up-dir.svg" alt="Сортировать по возрастанию">
+					</button>
+				</span>
+				<span class="icon-down-dir">
+					<button class="sorting active">
+						<img src="img/icon-down-dir.svg" alt="Сортировать по убыванию">
+					</button>
+				</span>
 			</div>
 
 			<section class="hotels">
@@ -75,7 +90,7 @@
 				<ul>
 					<li>
 						<section class="hotel-list1">
-							<h2 class="hotel-name">Amara Resort &amp; Spa</h2>
+							<h2 class="hotel-name"><a href="#">Amara Resort &amp; Spa</a></h2>
 							<img src="img/hotels-amara.jpg" alt="Фото гостиницы Amara Resort &amp; Spa" width="135" height="90">
 							<p class="hotel-type">Гостиница</p>
 							<p class="hotel-price">ОТ 4000 Р.</p>
@@ -86,7 +101,7 @@
 					</li>
 					<li>
 						<section class="hotel-list2">
-							<h2 class="hotel-name">Desert Quail Inn</h2>
+							<h2 class="hotel-name"><a href="#">Desert Quail Inn</a></h2>
 							<img src="img/hotels-desert.jpg" alt="Фото мотеля Desert Quail Inn" width="135" height="90">
 							<p class="hotel-type">Мотель</p>	
 							<p class="hotel-price">ОТ 3000 Р.</p>
@@ -97,7 +112,7 @@
 					</li>
 					<li>
 						<section class="hotel-list3">
-							<h2 class="hotel-name">Villas at Poco Diablo</h2>
+							<h2 class="hotel-name"><a href="#">Villas at Poco Diablo</a></h2>
 							<img src="img/hotels-villas.jpg" alt="Фото апартаментов Villas at Poco Diablo" width="135" height="90">
 							<p class="hotel-type">Апартаменты</p>
 							<p class="hotel-price">ОТ 2000 Р.</p>
@@ -113,6 +128,7 @@
 		<footer class="footer">
 			<p class="footer-hashtag">#VisitSedona</p>
     	<section class="footer-contacts">
+    		<h1 class="visually-hidden">Контакты</h1>
     		<ul>
     			<li>
     				<a href="https://twitter.com" class="footer-social-button">
