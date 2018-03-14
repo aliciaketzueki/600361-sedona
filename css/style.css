@@ -41,12 +41,11 @@ body {
 	color: #81b3d2;
 }
 .header-navigation a:active {
-	color: #000000;
-	opacity: 0.3;
+	color: rgba(0, 0, 0, 0.3)
 }
-/*находимся на странице---.header-navigation li:active { 
+.header-navigation .active {
 	color: #766357;
-}---*/
+}
 .slogan,
 .search-hotels,
 .form {
@@ -141,6 +140,7 @@ body {
 .form-field {
  	border: 0;
 }
+/*----------КАЛЕНДАРЬ----------*/
 .calendar {
 	font: inherit;
 	background-color: #f2f2f2;
@@ -148,12 +148,20 @@ body {
 	width: 346px;
 	height: 38px;
 }
-.calendar::after {
-	content: url(../img/calendar.svg);
-	height: 22px;
-	margin-right: 2.6%;
+.button-calendar {
+	background-color: #ffffff;
+	height: 38px;
 }
-
+.button-calendar path {
+	opacity: 0.3;
+}
+.button-calendar:hover path {
+	opacity: 1;
+}
+.button-calendar:active path {
+	fill: #81b3d2;
+	opacity: 1;
+}
 .calendar:hover,
 .button-number:hover,
 .minus:hover,
@@ -175,6 +183,7 @@ body {
 	background-color: #ffffff;
 	outline: 2px solid #e5e5e5;
 }
+/*----------КАЛЕНДАРЬ КОНЕЦ----------*/
 .minus,
 .plus {
 	background-color: #f2f2f2;
@@ -245,8 +254,6 @@ body {
 .parameters {
 	background-image: url("../img/inner-background.jpg");
 	background-repeat: no-repeat;
-	width: 768px;
-	height: 418px;
 	color: #ffffff;
 	line-height: 21px;
 }
@@ -258,6 +265,7 @@ body {
 .button-cost {
 	font-weight: normal;
 }
+/*----------ЧЕКБОКСЫ-----------*/
 .checkbox {
 	display: none;
 }
@@ -274,6 +282,7 @@ body {
 	width: 27px;
 	height: 23px;
 }
+/*----------ЧЕКБОКСЫ КОНЕЦ-----------*/
 .parameters1,
 .parameters2,
 .parameters3 {
@@ -282,10 +291,31 @@ body {
 }
 
 /*----КНОПКИ MAX и MIN------------*/
+.button-cost hr {
+	background-color: #ffffff;
+	height: 2px;
+	border: 0;
+}
+.button-min,
+.button-max {
+	background-image: url(../img/filter-button.svg);
+	background-repeat: no-repeat;
+	background-color: rgba(255, 255, 255, 0);
+	background-size: 20px 22px;
+	width: 22px;
+	height: 24px;
+}
+.button-min:hover,
+.button-max:hover {
+	background-size: 22px 24px;
+}
+/*----КНОПКИ MAX и MIN КОНЕЦ------------*/
+
 .button-view {
 	display: block;
 	width: 135px;
 	height: 32px;
+	margin-top: 20px;
 	background-color: rgba(255, 255, 255, 0);
 	box-shadow: 0 0 0 2px #ffffff;
 	color: #ffffff;
@@ -297,7 +327,7 @@ body {
 	color: #000000;
 }
 
-
+/*----СОРТИРОВКА----*/
 .found {
 	font-size: 21px;
 }
@@ -323,17 +353,25 @@ body {
 	color: #000000;
 	border-bottom: none;
 }
-.sorting-icon::after {
-	content: url(../img/icon-up-dir.svg);
+.sorting-icon { 
+    display: block;
+    width: 0;
+    height: 0;
+    margin-bottom: 14px;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-top: 10px solid #cacaca;
+ }
+.sorting-icon.active {
+	transform: scale(1, -1);
 }
-.sorting-icon.active::after {
-	content: url(../img/icon-down-dir.svg);
+.sorting-icon:hover {
+	border-top: 10px solid #231f20;
 }
-/*---ВСТАВИТЬ ИКОНКИ ВВЕРХ И ВНИЗ
-.sorting-icon {
-
+.sorting-icon:active {
+	border-top: 10px solid #81b3d2;
 }
-*/
+/*----СОРТИРОВКА КОНЕЦ----*/
 .hotel-name a {
 	font-size: 21px;
 	color: #000000;
