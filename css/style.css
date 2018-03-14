@@ -80,11 +80,14 @@ body {
 .causes-description4,
 .causes-description5 {
 	background-color: #eeeeee;
+	text-align: center;
 }
-.advices li {
+.advices li,
+.causes li:nth-of-type(n+3) {
 	display: inline-block;
+	vertical-align: bottom;
 	width: 33%;
-	white-space: pre-line;
+	white-space: pre-line; /*--???????--*/
 	text-align: center;
 }
 .advices-head {
@@ -109,10 +112,10 @@ body {
 
 .search-head {
 	font-size: 30px;
-	line-height: : 24px;
+	line-height: 24px;
 }
 .search {
-	line-height: : 24px;
+	line-height: 24px;
 	font-weight: normal;
 	color: #333333;
 }
@@ -127,8 +130,10 @@ body {
 	background-color: #766357;
 	color: #ffffff;
 	font-size: 21px;
+	display: block;
 	width: 568px;
 	height: 86px;
+	margin: 0 auto;
 }
 .button-search:hover {
 	background-color: #604e43;
@@ -141,6 +146,31 @@ body {
  	border: 0;
 }
 /*----------КАЛЕНДАРЬ----------*/
+@font-face {
+    font-family: 'Glyphter';
+    src: url('Glyphter.eot');
+    src: url('Glyphter.eot?#iefix') format('embedded-opentype'),
+         url('Glyphter.woff') format('woff'),
+         url('Glyphter.ttf') format('truetype'),
+         url('Glyphter.svg#Glyphter') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.button-calendar span {
+	display: inline-block;
+   font-family: 'Glyphter';
+   font-style: normal;
+   font-weight: normal;
+   line-height: 1;
+   font-size: 22px;
+   color: rgba(0, 0, 0, 0.3);
+}
+.button-calendar:hover span {
+	color: #000000;
+}
+.button-calendar:active span {
+	color: #81b3d2;
+}
 .calendar {
 	font: inherit;
 	background-color: #f2f2f2;
@@ -151,16 +181,6 @@ body {
 .button-calendar {
 	background-color: #ffffff;
 	height: 38px;
-}
-.button-calendar path {
-	opacity: 0.3;
-}
-.button-calendar:hover path {
-	opacity: 1;
-}
-.button-calendar:active path {
-	fill: #81b3d2;
-	opacity: 1;
 }
 .calendar:hover,
 .button-number:hover,
@@ -220,7 +240,9 @@ body {
 	background-color: #81b3d2;
 	width: 46px;
 	height: 48px;
-	margin: 6px;
+	margin-bottom: 3px;
+	display: inline-block;
+	vertical-align: middle;
 }
 .footer-contacts li:hover {
 	background-color: #669ec0;
@@ -232,7 +254,7 @@ body {
 	display: block;
 	text-align: center;
 	position: relative;
-	top: 30%;
+	top: 30%
 }
 .footer-contacts a:active path { 
 	fill: rgba(255, 255, 255, 0.3);
@@ -289,7 +311,15 @@ body {
 	display: inline-block;
 	border: 0;
 }
-
+.cost-min,
+.cost-max {
+	font: inherit;
+	line-height: 21px;
+	font-weight: normal;
+	background-color: rgba(255, 255, 255, 0);
+	color: #ffffff;
+	border: 0;
+}
 /*----КНОПКИ MAX и MIN------------*/
 .button-cost hr {
 	background-color: #ffffff;
@@ -339,7 +369,7 @@ body {
 .sorting {
 	text-decoration: none;
 	color: rgba(0, 0, 0, 0.3);
-	border-bottom: 1px dashed #81b3d2;
+	border-bottom: 1px dotted #81b3d2;
 }
 .sorting.active {
 	color: #81b3d2;
@@ -347,7 +377,7 @@ body {
 }
 .sorting:hover {
 	color: #81b3d2;
-	border-bottom: 1px dashed #81b3d2;
+	border-bottom: 1px dotted #81b3d2;
 }	
 .sorting:active {
 	color: #000000;
