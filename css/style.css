@@ -25,7 +25,7 @@ body {
 .main,
 .footer,
 .main-inner {
-	width: 768px;
+	width: 1200px;
 	margin: 0 auto;
 	background-color: #ffffff;
 	outline: 2px solid black;
@@ -60,7 +60,7 @@ body {
 	justify-content: flex-end;
 }
 .header-navigation li:nth-child(2) {
-	margin-right: 8%;
+	margin-right: 11%;
 }
 .header-navigation a {
 	text-decoration: none;
@@ -75,6 +75,11 @@ body {
 .header-navigation .active {
 	color: #766357;
 }
+.header-logo {
+	position: absolute;
+	margin: 0;
+	left: 50%;
+}
 /*-----------------------------HEADER КОНЕЦ--------------------------*/
 /*--------------------------------SLOGAN-----------------------------*/
 .slogan {
@@ -82,6 +87,7 @@ body {
 	min-height: 724px;
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 
 }
 .slogan-head,
@@ -100,6 +106,10 @@ body {
 .slogan::before {
 	content: url(../img/index-background.jpg);
 	outline: 2px solid black;
+	width: 1200px;
+	margin-top: -53px;
+	margin-bottom: -210px;
+
 }
 /*------------------------------SLOGAN КОНЕЦ---------------------------*/
 /*-----------------------------CAUSES ADVICES-----------------------------*/
@@ -206,7 +216,7 @@ body {
 	font-size: 21px;
 	display: block;
 	width: 568px;
-	height: 86px;
+	min-height: 86px;
 }
 .button-search:hover {
 	background-color: #604e43;
@@ -220,8 +230,8 @@ body {
 }
 .form-field {
 	outline: 2px solid blue;
-	margin-left: 100px;
-	margin-right: 100px;
+	width: 568px;
+	margin: 0 auto;
 	margin-bottom: 78px;
 	border: 0;
 	min-height: 395px;
@@ -413,9 +423,13 @@ body {
 	padding: 0;
 	margin-left: 6%;
 	margin-top: 31px;
+	flex-basis: 20%;
 }
 .parameters2 {
 	outline: 2px solid black;
+	flex-basis: 20%;
+	margin-right: auto;
+	padding: 0;
 }
 .parameters3 {
 	outline: 2px solid black;
@@ -512,7 +526,9 @@ body {
 	outline: 2px solid black;
 	display: flex;
 	justify-content: space-between;
-	width: 48%;
+	width: 364px;
+	margin-right: auto;
+	margin-left: 48px;
 }
 .found-block ul:nth-of-type(2) {
 	outline: 2px solid black;
@@ -582,22 +598,30 @@ body {
 .hotel-list2 div:nth-of-type(1),
 .hotel-list3 div:nth-of-type(1) {
 	outline: 2px solid black;
-	width: 314px;
+	width: 364px;
+	min-height: 90px;
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
-	padding-left: 14px;
-	margin-right: 57px;
-	margin-left: 17px;
+	align-content: space-between;
+	margin-right: auto;
+	margin-left: 30px;
 }
 .hotel-list1 div:nth-of-type(2),
 .hotel-list2 div:nth-of-type(2),
 .hotel-list3 div:nth-of-type(2) {
 	width: 154px;
+	min-height: 90px;
 	outline: 2px solid black;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	align-items: flex-end;
+}
+.hotel-name {
+	display: flex;
+	width: 100%;
+	margin: 0;
 }
 .hotel-name a {
 	font-size: 21px;
@@ -615,16 +639,23 @@ body {
 .hotel-price {
 	color: #333333;
 	font-weight: normal;
+	margin: 0;
+	width: 110px;
+	margin-right: 6px;
+}
+.hotel-price {
+	display: flex;
+	width: 60%;
 }
 .hotel-rating {
 	color: #666666;
 	background-color: #f2f2f2;
 	width: 110px;
-	height: 27px;
+	min-height: 27px;
 	font-weight: normal;
 	line-height: 21px;
 	text-align: center;
-	vertical-align: middle;
+	margin: 0;
 }
 .hotel-info,
 .hotel-buy {
@@ -638,7 +669,8 @@ body {
 	display: block;
 	background-color: #81b3d2;
 	width: 110px;
-	height: 27px;
+	min-height: 27px;
+	margin-right: 6px;
 }
 .hotel-info:hover {
 	background-color: #669ec0;
@@ -651,7 +683,7 @@ body {
 	display: block;
 	background-color: #766357;
 	width: 142px;
-	height: 27px;
+	minheight: 27px;
 }
 .hotel-buy:hover {
 	background-color: #604e43;
