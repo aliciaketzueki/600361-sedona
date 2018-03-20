@@ -30,19 +30,19 @@
 						<li>
 							<label for="pool">
 								<input class="checkbox" type="checkbox" id="pool" name="pool" checked>
-								<span>Бассейн</span>
+								<span class="parameter">Бассейн</span>
 							</label>
 						</li>
 						<li>
 							<label for="parking">
 								<input class="checkbox" type="checkbox" id="parking" name="parking">
-								<span>Парковка</span>
+								<span class="parameter">Парковка</span>
 							</label>
 						</li>
 						<li>
 							<label for="wi-fi">
 								<input class="checkbox" type="checkbox" id="wi-fi" name="wi-fi">
-								<span>Wi-fi</span>
+								<span class="parameter">Wi-fi</span>
 							</label>
 						</li>
 					</ul>
@@ -53,19 +53,19 @@
 						<li>
 							<label for="hotel">
 								<input class="checkbox" type="checkbox" id="hotel" name="hotel" checked>
-								<span>Гостиница</span>
+								<span class="parameter">Гостиница</span>
 							</label>
 						</li>
 						<li>
 							<label for="motel">
 								<input class="checkbox" type="checkbox" id="motel" name="motel" checked>
-								<span>Мотель</span>
+								<span class="parameter">Мотель</span>
 							</label>
 						</li>
 						<li>
 							<label for="apartments">
 								<input class="checkbox" type="checkbox" id="apartments" name="apartments" checked>
-								<span>Апартаменты</span>
+								<span class="parameter">Апартаменты</span>
 							</label>
 						</li>
 					</ul>
@@ -73,8 +73,14 @@
 				<fieldset class="parameters3">
 					<legend class="parameters-head">Стоимость в сутки (Р):</legend>
 					<div class="cost">
-						<label>От <input type="number" value="0" class="cost-min"></label> 
-						<label>До <input type="number" value="3000" class="cost-max"></label>
+						<label class="from">
+							<span>От</span> 
+							<input type="number" value="0" class="cost-min">
+						</label> 
+						<label class="to">
+							<span>До</span>
+							<input type="number" value="3000" class="cost-max">
+						</label>
 					</div>
 					<div class="button-cost">
 						<button class="button button-min" type="button"></button>
@@ -153,10 +159,9 @@
 				</ul>
 			</section>
 		</main>
+
 		<footer class="footer">
-			<div class="footer-hashtag">
-				<p>#VisitSedona</p>
-			</div>
+			<p class="footer-hashtag">#VisitSedona</p>
     	<section class="footer-contacts">
     		<h1 class="visually-hidden">Контакты</h1>
     		<ul>

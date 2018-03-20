@@ -10,6 +10,14 @@ body {
 	font-weight: bold;
 
 	background-color: #ffffff;
+	width: 1200px;
+	margin: 0 auto;
+}
+.header,
+.main,
+.footer,
+.main-inner {
+	outline: 2px solid black;
 }
 .header-navigation li,
 .footer-contacts li,
@@ -21,25 +29,19 @@ body {
 .hotels li {
 	list-style: none;
 }
-.header,
-.main,
-.footer,
-.main-inner {
-	width: 1200px;
-	margin: 0 auto;
-	background-color: #ffffff;
-	outline: 2px solid black;
-}
+.header-navigation ul,
+.footer-contacts ul,
 .causes ol,
 .advices ul,
-.causes-description2 ul,
 .form-field ul,
+.parameters ul,
 .found-block ul,
 .hotels ul {
 	padding: 0;
 	margin: 0;
 }
 /*----------------------------------HEADER---------------------------*/
+
 .header-navigation ul {
 	outline: 2px solid black;
 	display: flex;
@@ -47,8 +49,6 @@ body {
 	margin-right: 6%;
 	margin-left: 6%;
 	min-height: 56px;
-	padding: 0;
-	margin-bottom: 0;
 }
 .header-navigation li {
 	outline: 2px solid black;
@@ -63,6 +63,8 @@ body {
 	margin-right: 11%;
 }
 .header-navigation a {
+	padding-top: 15px;
+	padding-bottom: 15px;
 	text-decoration: none;
 	color: #000000;
 }
@@ -75,10 +77,14 @@ body {
 .header-navigation .active {
 	color: #766357;
 }
+.header {
+	position: relative;
+}
 .header-logo {
 	position: absolute;
 	margin: 0;
 	left: 50%;
+	transform: translate(-50%)
 }
 /*-----------------------------HEADER КОНЕЦ--------------------------*/
 /*--------------------------------SLOGAN-----------------------------*/
@@ -86,22 +92,27 @@ body {
 	outline: 2px solid black;
 	min-height: 724px;
 	display: flex;
+	justify-content: space-between;
 	flex-direction: column;
 	overflow: hidden;
-
 }
 .slogan-head,
 .slogan-neck {
-	width: 676px;
+	width: 50%;
 	align-self: center;
 	text-align: center;
+
 }
 .slogan-head {
 	font-size: 21px;
+	margin: 0;
+	margin-top: auto;
 }
 .slogan-neck {
 	color: #333333;
 	font-weight: normal;
+	margin-top: 27px;
+	margin-bottom: 50px;
 }
 .slogan::before {
 	content: url(../img/index-background.jpg);
@@ -109,106 +120,138 @@ body {
 	width: 1200px;
 	margin-top: -53px;
 	margin-bottom: -210px;
-
 }
 /*------------------------------SLOGAN КОНЕЦ---------------------------*/
 /*-----------------------------CAUSES ADVICES-----------------------------*/
+
 .causes {
 	outline: 2px solid black;
-	width: 100%;
 }
-
+.causes ol {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
 .causes li {
-	outline: 2px solid black;
 	min-height: 256px;
+	outline: 2px solid black;
+}
+.causes li:first-of-type {
 	display: flex;
 }
-.causes li:nth-of-type(1) {
-	flex-direction: row;
+.causes li:nth-of-type(2) {
+	display: flex;
+	flex-direction: row-reverse;
+}
+.causes li:nth-of-type(n+3) {
+	width: 33%;
+	flex-grow: 1;
+	background-color: #eeeeee;
+}
+.causes1 {
+	background-color: #81b3d2;
+	color: #ffffff;
+	width: 33%;
+	flex-grow: 1;
+}
+.causes-head {
+	font-size: 21px;
+	line-height: 21px;
+	text-align: center;
+	width: 37.75%;
+	padding-top: 46px;
+	margin: 0 auto;
+}
+.cause,
+.cause-number,
+.cause-else {
+	line-height: 21px;
+	font-weight: normal;
+	text-align: center;
+	padding-top: 22px;
+	margin: 0 auto;
+}
+.cause {
+	width: 77%;
+}
+.cause-else {
+	width: 66%;
+}
+.causes2 {
+	outline: 2px solid black;
+	height: 100%;
+}
+
+.advices li:nth-of-type(1)::before {
+	content: url(../img/icon-1.svg);
+	display: block;
+	padding-top: 60px;
+}
+.advices li:nth-of-type(2)::before {
+	content: url(../img/icon-3.svg);
+	display: block;
+	padding-top: 61px;
+}
+.advices li:nth-of-type(3)::before {
+	content: url(../img/icon-2.svg);
+	display: block;
+	padding-top: 58px;
+}
+.advices ul {
+	text-align: center;
+}
+.advices li {
+	outline: 2px solid black;
+	display: inline-block;
+	width: 33%;
+	min-height: 330px;
+	vertical-align: middle;
 }
 .advices-head {
 	font-size: 21px;
 	line-height: 21px;
 	text-align: center;
+	margin: 0 auto;
+	padding-top: 25px;
 }
 .advice {
 	color: #333333;
 	line-height: 21px;
 	font-weight: normal;
 	text-align: center;
+	margin: 0 auto;
+	width: 75%;
+	padding-top: 22px;
 }
-.advices li:nth-of-type(1)::before {
-	content: url(../img/icon-1.svg);
-}
-.advices li:nth-of-type(2)::before {
-	content: url(../img/icon-3.svg);
-}
-.advices li:nth-of-type(3)::before {
-	content: url(../img/icon-2.svg);
-}
-.advices ul {
-	outline: 2px solid black;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-.advices li {
-	width: 33%;
-	min-height: 330px;
-}
-.causes li:nth-of-type(3) {
-	flex-direction: row-reverse;
-}
-.causes-description2 ul {
-	outline: 2px solid black;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-}
-.causes-description2 li {
-	width: 33%;
-}
-.causes-head {
-	font-size: 21px;
-	line-height: 21px;
-}
-.cause {
-	line-height: 21px;
-	font-weight: normal;
-}
-.causes-description1 {
-	background-color: #81b3d2;
-	color: #ffffff;
-}
-.causes-description2 {
-	background-color: #eeeeee;
-}
+
 /*--------------------------CAUSES ADVICES КОНЕЦ--------------------------*/
-/*-----------------------------SEARCH FORM--------------------------------*/
+/*-----------------------------SEARCH BUTTON--------------------------------*/
 .search-hotels {
 	outline: 2px solid black;
 	min-height: 291px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
 }
 .search-head {
-	padding-top: 57px;
 	font-size: 30px;
-	line-height: 24px;
+	line-height: 36px;
+	text-align: center;
+	margin: 0;
+	padding-top: 50px;
 }
 .search {
 	line-height: 24px;
 	font-weight: normal;
+	text-align: center;
 	color: #333333;
+	margin: 0 auto;
+	padding-top: 25px;
+	width: 40%;
 }
 .button {
 	font: inherit;
 	border: 0;	
 	text-transform: inherit;
 	text-align: center;
-	vertical-align: middle;
+	margin: 0;
 }
 .button-search {
 	background-color: #766357;
@@ -217,6 +260,8 @@ body {
 	display: block;
 	width: 568px;
 	min-height: 86px;
+	margin: 0 auto;
+	margin-top: 45px;
 }
 .button-search:hover {
 	background-color: #604e43;
@@ -225,35 +270,42 @@ body {
 	background-color: #503e33;
 	color: rgba(255, 255, 255, 0.3);
 }
+/*---------------------------SEARCH BUTTON КОНЕЦ------------------------------*/
+/*-----------------------------SEARCH FORM--------------------------------*/
 .form {
 	outline: 2px solid black;
 }
 .form-field {
 	outline: 2px solid blue;
 	width: 568px;
+	min-height: 395px;
 	margin: 0 auto;
 	margin-bottom: 78px;
 	border: 0;
-	min-height: 395px;
 	padding: 0;
 }
 .form-field ul {
-	outline: 2px solid red;
+	/*outline: 2px solid red;*/
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
 	flex-wrap: wrap;
-	align-content: space-between;
+	justify-content: space-between;
 	padding-top: 55px;
 	padding-bottom: 25px;
 	margin-right: 55px;
-	margin-left: 55px;
+	margin-left: 55px; /* 458px ширина */
 }
 .form-field li {
-	outline: 2px solid black;
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 29px;
+	min-height: 38px;
+	position: relative;
+	width: 100%; /* 458px ширина */
+}
+.form-field li:nth-of-type(n+3) {
+	width: 226px; /* 49.35% */
+	justify-content: flex-end;
 }
 
 /*----------КАЛЕНДАРЬ----------*/
@@ -268,7 +320,6 @@ body {
     font-style: normal;
 }
 .button-calendar span {
-	display: inline-block;
    font-family: 'Glyphter';
    font-style: normal;
    font-weight: normal;
@@ -286,40 +337,57 @@ body {
 	font: inherit;
 	background-color: #f2f2f2;
 	border: 0;
-	width: 346px;
-	height: 38px;
+	width: 75%;
+	min-height: 38px;
 }
 .button-calendar {
-	background-color: #ffffff;
-	height: 38px;
-}
-.calendar:hover,
-.button-number:hover,
-.minus:hover,
-.plus:hover {
-	background-color: #ebebeb;
+	background-color: rgba(0, 0, 0, 0);
+	position: absolute;
+	left: 100%;
+	transform: translate(-100%);
+	padding: 9px;
+	padding-bottom: 0; /* из-за размера шрифта 22px появился внизу свой padding */
 }
 .button-number {
 	font: inherit;
 	background-color: #f2f2f2;
 	border: 0;
-	width: 114px;
-	height: 38px;
+	padding: 0;
+	width: 113px;
+	min-height: 38px;
 	text-align: center;
 }
+.calendar:hover,
+.button-number:hover {
+	background-color: #ebebeb;
+}
 .calendar:focus,
-.button-number:focus,
-.minus:focus,
-.plus:focus {
+.button-number:focus {
 	background-color: #ffffff;
 	outline: 2px solid #e5e5e5;
 }
+
 /*----------КАЛЕНДАРЬ КОНЕЦ----------*/
 .minus,
 .plus {
-	background-color: #f2f2f2;
-	border: 0;
-	height: 38px;
+	background-color: rgba(0, 0, 0, 0);
+	min-height: 38px;
+	width: 37px;
+	padding: 0;
+	padding-top: 2px;
+	position: absolute;
+}
+.plus {
+	right: 0;
+}
+.minus {
+	right: 76px;
+}
+.adults {
+	margin-right: 42px;
+}
+.children {
+	margin-right: 27px;
 }
 .minus:hover line,
 .plus:hover line {
@@ -348,8 +416,9 @@ body {
 /*--------------------------SEARCH FORM КОНЕЦ-----------------------------*/
 /*------------------------------FOOTER---------------------------------*/
 .footer {
+	min-height: 120px;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 }
 .footer-hashtag,
 .footer-contacts,
@@ -359,15 +428,23 @@ body {
 }
 .footer-hashtag {
 	font-size: 21px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	padding-top: 48px;
 	/*auto в фотошопе---line-height: normal;---*/
+}
+.footer-contacts ul {
+	display: flex;
+	justify-content: center;
+	padding-top: 36px;
 }
 .footer-contacts li {
 	background-color: #81b3d2;
 	width: 46px;
 	height: 48px;
-	margin-bottom: 3px;
-	display: inline-block;
-	vertical-align: middle;
+	margin-right: 6px;
+	position: relative;
 }
 .footer-contacts li:hover {
 	background-color: #669ec0;
@@ -375,18 +452,30 @@ body {
 .footer-contacts li:active {
 	background-color: #5496bd;
 }
-.footer-contacts a {
+.footer-social-button {
 	display: block;
-	text-align: center;
-	position: relative;
-	top: 30%
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
 }
 .footer-contacts a:active path { 
 	fill: rgba(255, 255, 255, 0.3);
 } /*не проходит по критерию вложенности селекторов*/
-
 .footer-copyright {
+	display: flex;
+	justify-content: center;
+}
+.footer-copyright p {
 	font-weight: normal;
+	padding: 0;
+	margin: 0;
+	padding-right: 7px;
+	padding-top: 48px;
+}
+.footer-copyright-logo {
+	padding-top: 40px;
 }
 .footer-copyright-logo:hover path {
 	fill: #81b3d2;
@@ -412,15 +501,25 @@ body {
 }
 .parameters-head {
 	font-size: 16px;
+	padding: 0;
+	padding-bottom: 23px;
 }
 .parameters li,
 .cost,
 .button-cost {
 	font-weight: normal;
 }
+.parameters li {
+	padding-bottom: 23px;
+}
+.parameters1,
+.parameters2,
+.parameters3 {
+	border: 0;
+	padding: 0;
+}
 .parameters1 {
 	outline: 2px solid black;
-	padding: 0;
 	margin-left: 6%;
 	margin-top: 31px;
 	flex-basis: 20%;
@@ -429,13 +528,8 @@ body {
 	outline: 2px solid black;
 	flex-basis: 20%;
 	margin-right: auto;
-	padding: 0;
+	margin-left: 15px;
 }
-.parameters3 {
-	outline: 2px solid black;
-	margin-right: 6%;
-}
-
 /*----------ЧЕКБОКСЫ-----------*/
 .checkbox {
 	position: absolute;
@@ -443,28 +537,49 @@ body {
 	opacity: 0;
 }
 
-.parameters span {
-	display: block;
+.parameter {
+	display: flex;
 }
-.parameters span::before {
+.parameter::before {
 	content: url(../img/checkbox-off.svg);
-	width: 23px;
+	width: 27px;
 	height: 23px;
+	margin-right: 17px; /*ПРОВЕРИТЬ*/
 }
-.checkbox:focus + span::before {
+.checkbox:focus + .parameter::before {
 	outline: 2px solid #81b3d2;
 }
-.checkbox:checked + span::before {
+.checkbox:checked + .parameter::before {
 	content: url(../img/checkbox-on.svg);
 	width: 27px;
 	height: 23px;
 }
 /*----------ЧЕКБОКСЫ КОНЕЦ-----------*/
-.parameters1,
-.parameters2,
 .parameters3 {
-	display: inline-block;
-	border: 0;
+	outline: 2px solid black;
+	margin-right: 6%;
+	width: 328px;
+}
+.parameters3 .parameters-head {
+	padding: 0;
+	margin-left: 10px;
+	margin-bottom: 9px;
+}
+.cost {
+	display: flex;
+	justify-content: flex-end;
+	margin-left: 10px;
+}
+.from,
+.to {
+	border: 2px solid #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.from span,
+.to span {
+	margin-right: 4px;
 }
 .cost-min,
 .cost-max {
@@ -474,6 +589,7 @@ body {
 	background-color: rgba(255, 255, 255, 0);
 	color: #ffffff;
 	border: 0;
+	width: 30%;
 }
 /*----КНОПКИ MAX и MIN------------*/
 .button-cost hr {
@@ -683,7 +799,7 @@ body {
 	display: block;
 	background-color: #766357;
 	width: 142px;
-	minheight: 27px;
+	min-height: 27px;
 }
 .hotel-buy:hover {
 	background-color: #604e43;

@@ -30,123 +30,118 @@
 				<h1 class="visually-hidden">Причины</h1>
 				<ol>
 					<li>
-						<section class="causes-description1">
+						<section class="causes1">
 							<h2 class="causes-head"><b>Настоящий городок</b></h2>
-							<p class="cause">— №1 —
-							<br>
-							Седона — не аттракцион для туристов, там течет своя жизнь</p>
+							<p class="cause-number">— №1 —</p>
+							<p class="cause">Седона — не аттракцион для туристов, там течет своя жизнь</p>
 						</section>
 						<img src="img/index-cause1.jpg" alt="Настоящий городок" width="800" height="256">
 					</li>
 					<li>
-						<section class="advices">
-							<h2 class="visually-hidden">Советы</h2>
-							<ul>
-								<li>
-									<h3 class="advices-head">Жилье</h3>
-									<p class="advice">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-								</li>
-								<li>
-									<h3 class="advices-head">Еда</h3>
-									<p class="advice">Всегда заказывайте фирменный бургер, Вы не разочаруетесь</p>
-								</li>
-								<li>
-									<h3 class="advices-head">Сувениры</h3>
-									<p class="advice">Не только китайского, но и местного производства!</p>
-								</li>
-							</ul>
-						</section>
-					</li>
-					<li>
-						<section class="causes-description1">
+						<section class="causes1">
 							<h2 class="causes-head"><b>Там есть мост дьявола</b></h2>
-							<p class="cause">— №2 —
-							<br>
-							Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+							<p class="cause-number">— №2 —</p>
+							<p class="cause">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 						</section>
 						<img src="img/index-cause2.jpg" alt="Мост Дьявола" width="800" height="256">
 					</li>
 					<li>
-						<section class="causes-description2">
-							<ul>
-								<li>
-									<h3 class="advices-head">Небольшая площадь</h3>
-									<p class="cause">— №3 —
-									<br>
-									ВСЕ достопримечательности находятся очень близко</p>
-								</li>
-								<li>
-									<h3 class="advices-head">Красивая дорога</h3>
-									<p class="cause">— №4 —
-									<br>
-									Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-								</li>
-								<li>
-									<h3 class="advices-head">Мало Туристов</h3>
-									<p class="cause">— №5 —
-									<br>
-									Большинство едет в гранд каньон и толпится там</p>
-								</li>
-							</ul>
+						<section class="causes2">
+							<h2 class="causes-head">Небольшая площадь</h2>
+							<p class="cause-number">— №3 —</p>
+							<p class="cause-else">ВСЕ достопримечательности находятся очень близко</p>
+						</section>
+					</li>
+					<li>
+						<section class="causes2">
+							<h2 class="causes-head">Красивая дорога</h2>
+							<p class="cause-number">— №4 —</p>
+							<p class="cause-else">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+						</section>
+					</li>
+					<li>
+						<section class="causes2">
+							<h2 class="causes-head">Мало Туристов</h2>
+							<p class="cause-number">— №5 —</p>
+							<p class="cause-else">Большинство едет в гранд каньон и толпится там</p>
 						</section>
 					</li>
 				</ol>
 			</section>	
+
+			<section class="advices">
+				<h1 class="visually-hidden">Советы</h1>
+				<ul>
+					<li>
+						<h2 class="advices-head">Жилье</h2>
+						<p class="advice">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+					</li>
+					<li>
+						<h2 class="advices-head">Еда</h2>
+						<p class="advice">Всегда заказывайте фирменный бургер, Вы не разочаруетесь</p>
+					</li>
+					<li>
+						<h2 class="advices-head">Сувениры</h2>
+						<p class="advice">Не только китайского, но и местного производства!</p>
+					</li>
+				</ul>
+			</section>
+
 			<section class="search-hotels">
 				<h2 class="search-head">Заинтересовались?</h2>
-				<p class="search">Укажите предполагаемые даты поездки,
+				<p class="search">Укажите предполагаемые даты поездки, 
 				<br>
 				и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 				<button type="button" class="button button-search">Поиск гостиницы в Седоне</button>
 			</section>
 					<!--ФОРМА ПОИСКА ГОСТИНИЦЫ-->
-			<form action="https://echo.htmlacademy.ru/" method="post" class="form">
+			<form action="https://echo.htmlacademy.ru/" method="post" class="form" id="#modal">
 				<fieldset class="form-field">
 					<legend class="visually-hidden">Поиск гостиницы</legend>
 					<ul>
 						<li>
-							<label for="arrival">Дата заезда:</label>	
+							<label for="arrival" class="arrival">Дата заезда:</label>	
 							<input type="date" name="date-of-arrival" id="arrival" class="calendar" value="2017-04-24" required>
 							<button type="button" class="button button-calendar">
 								<span>A</span>
 							</button>
 						</li>
 						<li>
-							<label for="departure">Дата выезда:</label>
+							<label for="departure" class="departure">Дата выезда:</label>
 							<input type="date" name="date-of-departure" id="departure" class="calendar" value="2017-07-04" required>
 							<button type="button" class="button button-calendar">
 								<span>A</span>
 							</button>
 						</li>
 						<li>
-							<label for="adults">Взрослые:</label>
+							<label for="adults" class="adults">Взрослые:</label>
 							<button type="button" class="button minus" id="adults-minus">
-								<svg width="16" height="7">
-									<line stroke="#a9a9a9" stroke-width="3" x1="3" y1="2" x2="13" y2="2"/>
+								<svg width="13" height="15">
+									<line stroke="#a9a9a9" stroke-width="3" x1="1" y1="7.5" x2="12" y2="7.5"/>
 								</svg>
 							</button>
 							<input type="text" id="adults" name="number-of-adults" class="button-number" value="2" pattern="^[ 0-9]+$">
 							<button type="button" class="button plus" id="adults-plus">
-								<svg width="13" height="13">
-									<line stroke="#a9a9a9" stroke-width="3" x1="1" y1="6.5" x2="12" y2="6.5"/>
-									<line stroke="#a9a9a9" stroke-width="3" x1="6.5" y1="1" x2="6.5" y2="12"/>	
+								<svg width="13" height="15">
+									<line stroke="#a9a9a9" stroke-width="3" x1="1" y1="7.5" x2="12" y2="7.5"/>
+									<line stroke="#a9a9a9" stroke-width="3" x1="6.5" y1="2" x2="6.5" y2="13"/>		
 								</svg>
 							</button>
 							<label for="adults-minus"></label>
 							<label for="adults-plus"></label>
 						</li>
 						<li>
-							<label for="children">Дети:</label>
+							<label for="children" class="children">Дети:</label>
 							<button type="button" class="button minus" id="children-minus">
-								<svg width="16" height="7">
-									<line stroke="#a9a9a9" stroke-width="3" x1="3" y1="2" x2="13" y2="2"/>
+								<svg width="13" height="15">
+									<line stroke="#a9a9a9" stroke-width="3" x1="1" y1="7.5" x2="12" y2="7.5"/>
 								</svg>
 							</button>
 							<input type="text" id="children" name="number-of-children" class="button-number" value="0" pattern="^[ 0-9]+$">
 							<button type="button" class="button plus" id="children-plus">
-								<svg width="13" height="13">
-									<line stroke="#a9a9a9" stroke-width="3" x1="1" y1="6.5" x2="12" y2="6.5"/>
-									<line stroke="#a9a9a9" stroke-width="3" x1="6.5" y1="1" x2="6.5" y2="12"/>	
+								<svg width="13" height="15">
+									<line stroke="#a9a9a9" stroke-width="3" x1="1" y1="7.5" x2="12" y2="7.5"/>
+									<line stroke="#a9a9a9" stroke-width="3" x1="6.5" y1="2" x2="6.5" y2="13"/>	
 								</svg>
 							</button>
 							<label for="children-minus"></label>
@@ -160,9 +155,7 @@
 		</main>
 
 		<footer class="footer">
-			<div class="footer-hashtag">
-				<p>#VisitSedona</p>
-			</div>
+			<p class="footer-hashtag">#VisitSedona</p>
     	<section class="footer-contacts">
     		<h1 class="visually-hidden">Контакты</h1>
     		<ul>
