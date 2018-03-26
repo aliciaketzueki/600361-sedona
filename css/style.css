@@ -101,7 +101,6 @@ body {
 	width: 50%;
 	align-self: center;
 	text-align: center;
-
 }
 .slogan-head {
 	font-size: 21px;
@@ -111,13 +110,13 @@ body {
 .slogan-neck {
 	color: #333333;
 	font-weight: normal;
-	margin-top: 27px;
+	margin-top: 30px;
 	margin-bottom: 50px;
 }
 .slogan::before {
 	content: url(../img/index-background.jpg);
 	width: 1200px;
-	margin-top: -53px;
+	margin-top: -55px;
 	margin-bottom: -210px;
 }
 /*------------------------------SLOGAN КОНЕЦ---------------------------*/
@@ -242,8 +241,11 @@ body {
 
 /*--------------------------CAUSES ADVICES КОНЕЦ--------------------------*/
 /*-----------------------------SEARCH BUTTON--------------------------------*/
+.search {
+	position: relative;
+}
 .search-hotels {
-	min-height: 291px;
+	min-height: 290px;
 }
 .search-head {
 	font-size: 30px;
@@ -252,7 +254,7 @@ body {
 	margin: 0;
 	padding-top: 50px;
 }
-.search {
+.search-text {
 	line-height: 24px;
 	font-weight: normal;
 	text-align: center;
@@ -287,14 +289,22 @@ body {
 }
 /*---------------------------SEARCH BUTTON КОНЕЦ------------------------------*/
 /*-----------------------------SEARCH FORM--------------------------------*/
-
+.form {
+	/*display: none;*/
+	position: absolute;
+	background-color: #ffffff;
+	z-index: 3;
+	top: 290px;
+	left: 50%;
+	transform: translate(-50%);
+}
 .form-field {
 	width: 568px;
 	min-height: 395px;
 	margin: 0 auto;
-	margin-bottom: 78px;
 	border: 0;
 	padding: 0;
+
 }
 .form-field ul {
 	display: flex;
@@ -319,7 +329,6 @@ body {
 	width: 226px; /* 49.35% */
 	justify-content: flex-end;
 }
-
 /*----------КАЛЕНДАРЬ----------*/
 @font-face {
     font-family: 'Glyphter';
@@ -349,7 +358,9 @@ body {
 	font: inherit;
 	background-color: #f2f2f2;
 	border: 0;
+	padding-left: 13px;
 	width: 75%;
+	box-sizing: border-box;
 	min-height: 38px;
 }
 .button-calendar {
@@ -425,6 +436,26 @@ body {
 	background-color: #5496bd;
 	color: rgba(255, 255, 255, 0.3);
 }
+.map {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	min-height: 473px;
+	display: flex;
+}
+.map img {
+	position: absolute;
+	top: 0;
+	z-index: 1;
+	height: 593px;
+	width: 1200px;
+	margin-bottom: -125px;
+}
+.map iframe {
+	position: relative;
+	z-index: 2;
+}
+
 /*--------------------------SEARCH FORM КОНЕЦ-----------------------------*/
 /*------------------------------FOOTER---------------------------------*/
 
@@ -433,6 +464,7 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+
 }
 .footer-hashtag,
 .footer-contacts,
@@ -458,7 +490,6 @@ body {
 	width: 46px;
 	height: 48px;
 	margin-right: 6px;
-	position: relative;
 }
 .footer-contacts li:hover {
 	background-color: #669ec0;
@@ -467,16 +498,15 @@ body {
 	background-color: #5496bd;
 }
 .footer-social-button {
-	display: block;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .footer-contacts a:active path { 
 	fill: rgba(255, 255, 255, 0.3);
-} /*не проходит по критерию вложенности селекторов*/
+}
 .footer-copyright {
 	display: flex;
 	flex-wrap: wrap;
@@ -549,16 +579,15 @@ body {
 	z-index: -1;
 	opacity: 0;
 }
-
 .parameter {
 	display: flex;
 	flex-wrap: wrap;
 }
 .parameter::before {
 	content: url(../img/checkbox-off.svg);
-	width: 27px;
+	width: 23px;
 	height: 23px;
-	margin-right: 17px; /*ПРОВЕРИТЬ*/
+	margin-right: 17px;
 }
 .checkbox:focus + .parameter::before {
 	outline: 2px solid #81b3d2;
@@ -567,6 +596,7 @@ body {
 	content: url(../img/checkbox-on.svg);
 	width: 27px;
 	height: 23px;
+	margin-right: 13px;
 }
 /*----------ЧЕКБОКСЫ КОНЕЦ-----------*/
 .parameters3 {
@@ -637,9 +667,8 @@ body {
 	background-image: url(../img/filter-button.svg);
 	background-repeat: no-repeat;
 	background-color: rgba(255, 255, 255, 0);
-	background-size: 20px 22px;
-	width: 22px;
-	height: 24px;
+	width: 20px;
+	height: 22px;
 	padding: 0;
 }
 .button-max {
@@ -647,25 +676,25 @@ body {
 }
 .button-min:hover,
 .button-max:hover {
-	background-size: 22px 24px;
+	transform: scale(1.1, 1.1);
 }
-.button-min::after {
+.button-cost::before {
 	content: "";
 	display: block;
 	position: absolute;
 	z-index: -1;
 	left: 10px;
-	bottom: 13px;
+	bottom: 10px;
 	background-color: #ffffff;
 	height: 3px;
 	width: 253px;
 }
-.button-max::after {
+.button-cost::after {
 	content: "";
 	display: block;
 	position: absolute;
 	z-index: -1;
-	bottom: 13px;
+	bottom: 10px;
 	right: 0;
 	background-color: #918381;
 	height: 3px;
@@ -675,8 +704,8 @@ body {
 
 .button-view {
 	display: block;
-	width: 133px;
-	min-height: 32px;
+	width: 137px;
+	min-height: 36px;
 	margin: 0 auto;
 	margin-top: 20px;
 	background-color: rgba(255, 255, 255, 0);
@@ -752,7 +781,7 @@ body {
     border-bottom: 11px solid #cacaca;
  }
 .sorting-icon.active {
-	transform: scale(1, -1);
+	transform: rotate(180deg);
 	border-bottom: 11px solid #81b3d2;;
 }
 .sorting-icon:hover {
