@@ -519,10 +519,13 @@ img {
 }
 .calendar::-ms-input-placeholder {
 	color: #000000;
+	opacity: 1;
 }
 .calendar:-ms-input-placeholder {
 	color: #000000;
+	opacity: 1;
 }
+
 .button-calendar {
 	background-color: rgba(0, 0, 0, 0);
 	position: absolute;
@@ -1106,7 +1109,7 @@ img {
 	-webkit-transform: rotate(180deg);
 	    -ms-transform: rotate(180deg);
 	        transform: rotate(180deg);
-	border-bottom: 11px solid #81b3d2;;
+	border-bottom: 11px solid #81b3d2;
 }
 .sorting-icon:hover {
 	border-bottom: 11px solid #231f20;
