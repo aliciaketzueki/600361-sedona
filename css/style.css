@@ -449,24 +449,24 @@ img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
 	margin-bottom: 29px;
-	min-height: 38px;
 	position: relative;
 	width: 100%;
 }
 .form-field li:nth-of-type(n+3) {
-	width: 226px; /* 49.35% */
+	width: 226px;
 	-webkit-box-pack: end;
 	    -ms-flex-pack: end;
 	        justify-content: flex-end;
+}
+.arrival,
+.departure {
+	flex-grow: 1;
 }
 /*----------КАЛЕНДАРЬ----------*/
 @font-face {
@@ -494,7 +494,10 @@ img {
 	color: #81b3d2;
 }
 .calendar {
-	font: inherit;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #000000;
 	text-transform: uppercase;
 	background-color: #f2f2f2;
 	border: 0;
@@ -504,26 +507,16 @@ img {
 	        box-sizing: border-box;
 	min-height: 38px;
 }
-.form-field input[type="text"]::placeholder {
+.calendar::placeholder {
+	color: #000000;
+	opacity: 1;
+}
+.calendar::-ms-input-placeholder {
 	color: #000000;
 }
-.form-field input[type="text"]::-ms-input-placeholder {
+.calendar:-ms-input-placeholder {
 	color: #000000;
 }
-.form-field input[type="text"]:-ms-input-placeholder {
-	color: #000000;
-}
-/*.form-field input[type="text"]::-webkit-input-placeholder {
-	color: #000000;
-}
-.form-field input[type="text"]::-moz-placeholder {
-	color: #000000;
-}
-.form-field input[type="text"]:-moz-placeholder {
-	color: #000000;
-}*/
-
-
 .button-calendar {
 	background-color: rgba(0, 0, 0, 0);
 	position: absolute;
@@ -941,7 +934,7 @@ img {
 	background-color: rgba(255, 255, 255, 0);
 	color: #ffffff;
 	border: 0;
-	width: 30px;
+	width: 33px;
 }
 /*----КНОПКИ MAX и MIN------------*/
 .button-cost {
@@ -1266,7 +1259,6 @@ img {
 	        transition-duration: 0.3s;
 }
 .ratings {
-	outline: 2px solid red;
 	width: 154px;
 	min-height: 90px;
 	display: -webkit-box;
@@ -1276,9 +1268,6 @@ img {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
 	-webkit-box-align: end;
 	    -ms-flex-align: end;
 	        align-items: flex-end;
@@ -1288,19 +1277,13 @@ img {
 	color: #666666;
 	background-color: #f2f2f2;
 	width: 110px;
-	min-height: 27px;
 	font-weight: normal;
 	line-height: 21px;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	text-align: center;
 	margin: 0;
+	margin-top: 47px;
+	padding-top: 3px;
+	padding-bottom: 3px;
 }
 @font-face {
     font-family: 'Glyphter';
