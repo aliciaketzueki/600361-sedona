@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
     <link href="css/normalize.min.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 		<header class="header">
@@ -120,37 +120,33 @@
 								</li>
 								<li>
 									<label for="adults" class="adults">Взрослые:</label>
-									<button type="button" class="button minus" id="adults-minus">
+									<button type="button" class="button minus">
 										<svg width="13" height="15">
 											<line stroke="#a9a9a9" stroke-width="3" x1="1" y1="7.5" x2="12" y2="7.5"/>
 										</svg>
 									</button>
 									<input type="text" id="adults" name="number-of-adults" class="button-number" value="2" pattern="^[ 0-9]+$">
-									<button type="button" class="button plus" id="adults-plus">
+									<button type="button" class="button plus">
 										<svg width="13" height="15">
 											<line stroke="#a9a9a9" stroke-width="3" x1="1" y1="7.5" x2="12" y2="7.5"/>
 											<line stroke="#a9a9a9" stroke-width="3" x1="6.5" y1="2" x2="6.5" y2="13"/>		
 										</svg>
 									</button>
-									<label for="adults-minus"></label>
-									<label for="adults-plus"></label>
 								</li>
 								<li>
 									<label for="children" class="children">Дети:</label>
-									<button type="button" class="button minus" id="children-minus">
+									<button type="button" class="button minus">
 										<svg width="13" height="15">
 											<line stroke="#a9a9a9" stroke-width="3" x1="1" y1="7.5" x2="12" y2="7.5"/>
 										</svg>
 									</button>
 									<input type="text" id="children" name="number-of-children" class="button-number" value="0" pattern="^[ 0-9]+$">
-									<button type="button" class="button plus" id="children-plus">
+									<button type="button" class="button plus">
 										<svg width="13" height="15">
 											<line stroke="#a9a9a9" stroke-width="3" x1="1" y1="7.5" x2="12" y2="7.5"/>
 											<line stroke="#a9a9a9" stroke-width="3" x1="6.5" y1="2" x2="6.5" y2="13"/>	
 										</svg>
 									</button>
-									<label for="children-minus"></label>
-									<label for="children-plus"></label>
 								</li>
 							</ul>
 							<button type="submit" class="button button-find">Найти</button>

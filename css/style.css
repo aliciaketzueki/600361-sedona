@@ -473,9 +473,6 @@ img {
 }
 .form-field li:nth-of-type(n+3) {
 	width: 226px;
-	-webkit-box-pack: end;
-	    -ms-flex-pack: end;
-	        justify-content: flex-end;
 }
 .arrival,
 .departure {
@@ -580,10 +577,11 @@ img {
 	bottom: 0;
 }
 .adults {
-	margin-right: 41px;
+	flex-grow: 1;
 }
 .children {
-	margin-right: 27px;
+	flex-grow: 1;
+	margin-left: 50px;
 }
 .minus:hover line,
 .plus:hover line {
@@ -943,7 +941,7 @@ img {
 .cost-min,
 .cost-max {
 	font: inherit;
-	line-height: 21px;
+	line-height: 100%;
 	font-weight: normal;
 	background-color: rgba(255, 255, 255, 0);
 	color: #ffffff;
