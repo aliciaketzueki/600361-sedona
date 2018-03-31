@@ -116,6 +116,7 @@ img {
 /*--------------------------------SLOGAN-----------------------------*/
 .slogan {
 	min-height: 724px;
+	background-color: #ffffff;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -148,8 +149,12 @@ img {
 	margin-bottom: 50px;
 }
 .slogan::before {
-	content: url(../img/index-background.jpg);
+	content: "";
+	background-image: url(../img/index-background.jpg);
+	background-color: #eef7fd;
+	background-repeat: no-repeat;
 	width: 1200px;
+	height: 773px;
 	margin-top: -55px;
 	margin-bottom: -165px;
 }
@@ -296,14 +301,14 @@ img {
 	height: 76px;
 	display: block;
 	margin: 0 auto;
-	margin-top: 58px;
+	margin-top: 55px;
 }
 .advices-head {
 	font-size: 21px;
 	line-height: 21px;
 	text-align: center;
 	margin: 0 auto;
-	padding-top: 25px;
+	padding-top: 27px;
 }
 .advice {
 	color: #333333;
@@ -312,7 +317,7 @@ img {
 	text-align: center;
 	margin: 0 auto;
 	width: 75%;
-	padding-top: 22px;
+	padding-top: 25px;
 }
 
 /*--------------------------CAUSES ADVICES КОНЕЦ--------------------------*/
@@ -401,6 +406,7 @@ img {
 	-webkit-animation-timing-function: ease-in-out;
 	        animation-timing-function: ease-in-out;
 }
+
 @-webkit-keyframes emersion {
 	0% {
 		-webkit-transform: translate(-50%, -400px);
@@ -429,6 +435,7 @@ img {
 		        transform: translate(-50%, 0px);
 	}
 }
+
 .form-field {
 	width: 568px;
 	min-height: 395px;
@@ -562,8 +569,6 @@ img {
 	background-color: rgba(0, 0, 0, 0);
 	min-height: 38px;
 	width: 37px;
-	padding: 0;
-	padding-top: 2px;
 	position: absolute;
 }
 .plus {
@@ -769,7 +774,7 @@ img {
 /*-------------------------------------------INNER--------------------------------*/
 
 .parameters {
-	background-color: #ffffff;
+	background-color: #425464;
 	background-image: url("../img/inner-background.jpg");
 	background-repeat: no-repeat;
 
@@ -959,6 +964,7 @@ img {
 	background-color: rgba(255, 255, 255, 0);
 	background-image: url(../img/filter-button.svg);
 	background-repeat: no-repeat;
+	cursor: pointer;
 	width: 20px;
 	height: 22px;
 	padding: 0;
